@@ -19,6 +19,14 @@
 * Type `run` and the breakpoint will be at `_start`
 * To step through each instruction, run `si` intead of `s` like in C/C++
 * Read: https://sourceware.org/gdb/onlinedocs/gdb/Registers.html
+* Run `layout src` to show window with source code (C, C++)
+* To show assembly of the next line:
+
+```
+# From https://stackoverflow.com/a/29953542/128028
+set  disassemble-next-line on
+show disassemble-next-line
+```
 
 #### Debugging with vibrant TUI
 
@@ -27,6 +35,12 @@
 * Run `layout asm` before or after executing `run`
 * Run `layout reg` after executing `run`
 * To step through each instruction, run `si` intead of `s` like in C/C++
+* For better UI, look at https://github.com/cyrus-and/gdb-dashboard
+
+```
+# From https://stackoverflow.com/a/55935724/128028
+dashboard -layout source assembly registers stack
+```
 
 For more info, read:
 
