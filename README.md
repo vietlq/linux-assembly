@@ -42,6 +42,10 @@ show disassemble-next-line
 dashboard -layout source assembly registers stack
 ```
 
+#### Advanced GDB debugging
+
+* Read: http://web.cecs.pdx.edu/~jrb/cs201/lectures/handouts/gdbcomm.txt
+
 For more info, read:
 
 * http://dbp-consulting.com/tutorials/debugging/basicAsmDebuggingGDB.html
